@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.randypraginara.randyp_1106130167_studycase4.carigambar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cari Gambar"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/inputLink"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-Jeep-Wrangler-PNG-Image-500x382.png"
+            />
+
+        <Button
+            android:id="@+id/buttonCari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cari Gambar"
+            android:onClick="klikCari"/>
+
+        <ImageView
+            android:id="@+id/tampilGambar"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>
